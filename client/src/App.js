@@ -1,18 +1,21 @@
 import React, { Fragment } from "react";
-import './App.css';
+import "./App.css";
 
-
-//components 
+//components
 import InputTodo from "./components/InputTodo";
 import ListTodos from "./components/ListTodos";
+import Rooms from "./components/Rooms";
+import Scoreboard from "./components/Scoreboard";
 
 function App() {
   return (
     <Fragment>
-        <div className="container">
-          <InputTodo/>
-          <ListTodos />
-        </div>
+      <div className="container">
+        <InputTodo />
+        <ListTodos />
+        <Rooms />
+        <Scoreboard />
+      </div>
     </Fragment>
   );
 }

@@ -37,10 +37,11 @@ const ListTodos = () => {
 
   return (
     <Fragment>
-      {" "}
+      <h2 className="text-center mt-5"> Waiting List </h2>{" "}
       <table class="table mt-5 text-center">
         <thead>
           <tr>
+            <th>Name</th>
             <th>Description</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -54,6 +55,7 @@ const ListTodos = () => {
           </tr> */}
           {todos.map((todo) => (
             <tr key={todo.todo_id}>
+              <td>Name</td>
               <td>{todo.description}</td>
               <td>
                 <EditTodo todo={todo} />
